@@ -1,0 +1,85 @@
+.banner-form-wrapper {
+    position: absolute;
+    top: 15px;
+    z-index: 111;
+    width: 100%;
+}
+.banner-form-wrapper .banner-form-inner {
+	max-width: 430px;
+}
+.banner-form-wrapper .banner-form-header {
+	background: var(--blue);
+	padding: 14px 30px;
+}
+.banner-form-wrapper .banner-form-header-inner {
+	display: flex;
+	align-items: center;
+}
+.banner-form-wrapper .bannner-form-header-copy {
+	color: #fff;
+	font-family: 'Futura Std Book';
+	text-transform: uppercase;
+	line-height: 1;
+	letter-spacing: 0.040em;
+	padding-left: 10px;
+}
+.banner-form-wrapper .form-container-inner {
+	padding: 18px 25px;
+	background: rgba(132, 164, 208, 0.9);
+}
+
+.banner-form-wrapper input, .banner-form-wrapper select{
+	color: var(--input-black);
+	width: 100%;
+	font-size: 0.8em;
+	font-family: 'Adobe Garamond Pro Regular';
+	line-height: 2.5;
+	letter-spacing: 0.020em;
+	margin-bottom: 8px;
+	padding: 0px 15px;
+	border: none;
+
+}
+
+.banner-form-wrapper ::placeholder { 
+  color: var(--input-black);
+  opacity: 1;
+}
+
+
+.banner-form-wrapper select {
+    -moz-appearance:none; /* Firefox */
+    -webkit-appearance:none	; /* Safari and Chrome */
+    appearance:none;
+}
+
+.banner-form-wrapper .banner-form-input {
+	position: relative;
+	width: 100%;
+	display: inline-block;
+}
+.banner-form-input:after {
+    content:"\f0d7";
+    font-family:'Font Awesome 5 Free';
+    position: absolute;
+    right: 10px;
+    z-index: 5;
+    color: #9d9d9d;
+    pointer-events: none;
+    line-height: 2.2em;
+ }
+
+.banner-form-wrapper button{
+	color: #fff;
+	background: var(--red);
+	font-family: 'Futura Std Bold';
+	font-size: clamp(0.75em, 1.709vw, 0.95em);
+	width: 100%;
+	border: none;
+	text-transform: uppercase;
+	letter-spacing: 0.040em;
+	line-height: 1;
+	padding: 25px 0px;
+}
+
+

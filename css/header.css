@@ -1,0 +1,70 @@
+.header-wrapper {
+	position: relative;
+	background: #fff;
+	
+}
+.header-wrapper-top{
+	transition: 0.5s;
+}
+
+.header-wrapper-top.scroll {
+    position: fixed;
+    top: 0px;
+    z-index: 999;
+    width: 100%;
+}
+
+.header-wrapper .header {
+	padding: 25px 0px 15px 0px;
+}
+
+.header-wrapper .logo {
+	margin-bottom: 15px;
+}
+.header-wrapper .logo img {
+	width: 280px;
+}
+.header-wrapper .header-content {
+	display: block;
+	color: var(--blue);
+	text-align: center;
+	font-size: clamp(0.8em, 2.2vw, 1.30em);
+	font-family: 'Futura Std Book';
+	letter-spacing: 0;
+	line-height: 1.06;
+}
+
+.header-wrapper .header-content strong {
+	color: var(--red);
+	font-family: 'Futura Std Bold';
+}
+.header-wrapper .header-serator {
+	height: 5px;
+	width: 100%;
+	display: block;
+	border-top: 1px solid rgba(0,0,0,0.2);
+	border-bottom: 1px solid rgba(0,0,0,0.2);
+	background: var(--red);
+}
+
+@media (min-width: 768px){
+	.header-wrapper .logo{
+		margin-bottom: 0;
+	}
+	.header-wrapper .logo img {
+    width: 208px;
+}
+.header-wrapper .header-content {
+	text-align: right;
+}
+.header-wrapper .row{
+	align-items: flex-start;
+}
+}
+
+@media (min-width: 992px){
+	.header-wrapper .logo img {
+    width: 307px;
+}
+
+}

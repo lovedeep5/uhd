@@ -1,0 +1,55 @@
+@import 'fonts/font-familes.css';
+@import 'css/header.css';
+@import 'css/navbar.css';
+@import 'css/banner.css';
+@import 'css/banner-form.css';
+@import 'css/content-area.css';
+@import 'css/degrees.css';
+@import 'css/tabs-content.css';
+@import 'css/footer.css';
+
+
+
+
+:root {
+    --blue: #012f6d;
+    --red: #c5103d;
+    --input-black: rgba(84, 82, 82, 1.0);
+}
+
+*,html {
+    transition: all 0.5s;
+    scroll-behavior: smooth;
+}
+
+body {
+    transition: 0.5s;
+    font-size: 21px;
+    scroll-behavior: smooth;
+}
+
+p {
+    color: rgba(84, 82, 82, 1.0);
+    font-family: 'Adobe Garamond Pro Regular';
+    line-height: 1.55;
+    letter-spacing: 0.020em;
+    padding-bottom: 15px;
+    font-size: 0.85em;
+    max-width: 62em;
+}
+
+.heading {
+    display: block;
+    font-family: 'Futura Std Bold';
+    color: var(--blue);
+    font-size: clamp(1em, 2.051vw, 1.142em);
+    line-height: 1.79;
+    letter-spacing: -0.020em;
+    padding-bottom: 10px;
+}
+
+@media (min-width: 1366px) {
+    .container {
+        max-width: 1200px;
+    }
+}

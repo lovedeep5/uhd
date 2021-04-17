@@ -1,0 +1,89 @@
+.tabs-content-title-wrapper {
+    position: relative;
+    background: rgba(132, 164, 208, 1.0);
+    padding: 27px 0px;
+    margin-bottom: 30px;
+}
+
+.tabs-content-title-wrapper .tabs-content-title {
+    display: block;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.tabs-content-wrapper .tab-data-title {
+    color: var(--blue);
+    display: block;
+    font-family: 'Adobe Garamond Pro Regular';
+    font-size: clamp(1.2em, 2.821vw, 1.66em);
+    padding-bottom: 10px;
+    padding-top: 15px;
+}
+
+.tabs-content-wrapper .tab-data-col:not(:last-of-type) {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+.tabs-content-wrapper .tab-content:not(:first-of-type) {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .tabs-content-title-wrapper {
+        margin-bottom: 0px;
+    }
+
+    .tabs-content-wrapper .tab-data-col {
+        position: relative;
+        width: 33.33%;
+        display: inline-block;
+        float: left;
+        padding: 30px 15px;
+    }
+
+    .tabs-content-wrapper .tab-data-col:not(:last-of-type) {
+        border-bottom: none;
+    }
+
+    .tabs-content-wrapper .tab-data-col:before {
+        content: "\f0d7";
+        font-family: 'Font Awesome 5 Free';
+        position: absolute;
+        z-index: 5;
+        color: rgba(132, 164, 208, 1.0);
+        pointer-events: none;
+        line-height: 0.2;
+        top: -1px;
+        font-size: 1.5em;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .tabs-content-wrapper .tab-data-col:not(:last-of-type):after{
+    	content: "";
+    	width: 1px;
+    	height: 140px;
+    	background: rgba(1, 47, 109, 0.1);
+    	position: absolute;
+    	top: 80px;
+    	right: 0px;
+    }
+}
+
+@media (min-width: 992px) {
+    .tabs-content-wrapper .tab-data-col {
+        padding: 40px 25px 30px;
+        max-width: 370px;
+    }
+    .tabs-content-wrapper .tab-content {
+    	display: flex;
+    	justify-content: center;
+    }
+}
+
+@media (min-width: 1200px) {
+    .tabs-content-wrapper .tab-data-col {
+        padding: 50px 25px 30px;
+    }
+}

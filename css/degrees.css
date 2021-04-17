@@ -1,0 +1,82 @@
+.degrees-wrapper {
+    position: relative;
+    padding-bottom: 30px;
+}
+
+.degrees-wrapper .features-row {
+    display: grid;
+    grid-column-gap: 5px;
+    margin-bottom: 5px;
+    width: 100%;
+}
+
+.degrees-wrapper .degrees-title {
+    margin-bottom: 5px;
+}
+
+.degrees-wrapper .features-btn {
+    text-align: center;
+    font-family: 'Futura Std Book';
+    font-size: 0.85em;
+}
+
+.degrees-wrapper .features-btn:not(:last-of-type) {
+    margin-bottom: 5px;
+}
+
+.degrees-wrapper .features-btn a,
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+    color: var(--blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f1f1f1;
+    text-decoration: none;
+    border: 1px solid rgba(233, 233, 233, 1.0);
+    min-height: 80px;
+    transition: 0.5s;
+    text-transform: uppercase;
+    letter-spacing: 0.020em;
+}
+
+.degrees-wrapper .features-btn a:hover,
+.degrees-wrapper .features-btn a:active,
+.degrees-wrapper .features-btn a:focus {
+    color: #fff;
+    background: var(--red);
+}
+
+.degrees-wrapper .nav-tabs .nav-link {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.degrees-wrapper .degrees-copy position {
+    margin-bottom: 25px;
+    display: block;
+}
+
+.degrees-wrapper .tab-content:not(:first-of-type) {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .degrees-wrapper .features-row.four-btns {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .degrees-wrapper .features-row.three-btns {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .degrees-wrapper .features-btn:not(:last-of-type) {
+        margin-bottom: 0px;
+    }
+}
+
+@media (min-width: 992px) {
+    .degrees-wrapper {
+        padding-bottom: 70px;
+    }
+}
