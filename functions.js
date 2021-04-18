@@ -29,6 +29,14 @@ function scrollFunction() {
   document.documentElement.scrollTop = 0;
 }
 
+// FORM VALIDATION
+$(".user-request-form").submit(function(e){
+  e.preventDefault();
+alert(e.target.firstName.value);
+ 
+})
+// FORM VALIDATION
+
 })
 
 

@@ -1,6 +1,7 @@
 .header-wrapper {
 	position: relative;
 	background: #fff;
+	border-bottom: 10px solid var(--red);
 	
 }
 .header-wrapper-top{
@@ -12,6 +13,15 @@
     top: 0px;
     z-index: 999;
     width: 100%;
+	animation-name: headerAnimation;
+	animation-duration: 0.5s;
+}
+
+@keyframes headerAnimation {
+
+	from { top : -100px}
+	to { top : 0px }
+	
 }
 
 .header-wrapper .header {
@@ -38,14 +48,7 @@
 	color: var(--red);
 	font-family: 'Futura Std Bold';
 }
-.header-wrapper .header-serator {
-	height: 5px;
-	width: 100%;
-	display: block;
-	border-top: 1px solid rgba(0,0,0,0.2);
-	border-bottom: 1px solid rgba(0,0,0,0.2);
-	background: var(--red);
-}
+
 
 @media (min-width: 768px){
 	.header-wrapper .logo{

@@ -47,17 +47,17 @@
     }
 
     .tabs-content-wrapper .tab-data-col:before {
-        content: "\f0d7";
-        font-family: 'Font Awesome 5 Free';
-        position: absolute;
-        z-index: 5;
-        color: rgba(132, 164, 208, 1.0);
-        pointer-events: none;
-        line-height: 0.2;
-        top: -1px;
-        font-size: 1.5em;
-        left: 50%;
-        transform: translateX(-50%);
+        display: inline-block;
+    margin-left: .255em;
+    vertical-align: .255em;
+    content: "";
+    border-top: .5em solid;
+    border-right: .5em solid transparent;
+    border-bottom: 0;
+    border-left: .5em solid transparent;
+    position: absolute;
+    top: 0;
+    color: #84a4d0;
     }
 
     .tabs-content-wrapper .tab-data-col:not(:last-of-type):after{

@@ -6,6 +6,9 @@
     <title></title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 
@@ -18,7 +21,7 @@
                     <div class="row">
                         <div class="col-sm-4">
                             <div class="logo">
-                                <a href="/uhd/"><img src="./images/logo.png" alt="website-logo"> </a>
+                                <a href="/uhd/"><img src="./images/logo.png" alt="websites"> </a>
                             </div>
                         </div>
                         <div class="col-sm-8">
@@ -30,8 +33,50 @@
                     </div>
                 </div>
             </div>
-            <span class="header-serator"></span>
+
         </div>
+
+        <!-- NAVBAR -->
+        <div class="navbar-wrapper">
+            <div class="navbar-inner">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <nav class="navbar navbar-expand-lg navbar-dark">
+                                <a class="navbar-brand" href="tel:+17132218522"><i class="fas fa-phone"></i> | call</a>
+                                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                    data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+                                    aria-expanded="false" aria-label="Toggle navigation">
+                                    <i class="fal fa-bars"></i>
+                                </button>
+                                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                                    <ul class="navbar-nav">
+                                        <li class="nav-item active">
+                                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                                        </li>
+
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                Degree programs
+                                            </a>
+                                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                                <a class="dropdown-item" href="#about-university">About University</a>
+                                                <a class="dropdown-item" href="#featured-degrees">Featured Degrees</a>
+                                                <a class="dropdown-item" href="#why-choose">WHY CHOOSE UHD?</a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- HEADER WRAPPER CLOSED -->
     </div>
     <!-- BANNER -->
     <div class="banner-wrapper">
@@ -79,17 +124,18 @@
                                     </div>
                                     <div class="banner-form-container">
                                         <div class="form-container-inner">
-                                            <form name="user-fom" method="post">
-                                                <input type="text" name="first-name" required="true"
+                                            <form name="user-fom" method="post" class="user-request-form"
+                                                action="google.com">
+                                                <input type="text" name="firstName" required="true"
                                                     placeholder="First Name*">
-                                                <input type="text" name="last-name" required="true"
+                                                <input type="text" name="lastName" required="true"
                                                     placeholder="Last Name*">
                                                 <input type="email" name="email" required="true"
                                                     placeholder="E-mail Address*">
                                                 <input type="tel" name="phone" required="true"
                                                     placeholder="Phone Number*">
                                                 <div class="banner-form-input">
-                                                    <select name="program-of-interest">
+                                                    <select name="programOfInterest">
                                                         <option value="">Program of Interest*</option>
                                                         <option value="1">Program 1</option>
                                                         <option value="2">Program 2</option>
@@ -97,7 +143,7 @@
                                                     </select>
                                                 </div>
                                                 <div class="banner-form-input">
-                                                    <select name="program-delivery-type">
+                                                    <select name="programDeliveryType">
                                                         <option value="">Program Delivery Type</option>
                                                         <option value="1">Program 1</option>
                                                         <option value="2">Program 2</option>
@@ -105,7 +151,7 @@
                                                     </select>
                                                 </div>
                                                 <div class="banner-form-input">
-                                                    <select name="preferred-communication-type">
+                                                    <select name="preferredCommunicationType">
                                                         <option value="">Preferred Communication Type</option>
                                                         <option value="1">Phone</option>
                                                         <option value="2">Email</option>
@@ -125,7 +171,7 @@
         </div>
     </div>
     <!-- CONTENT AREA -->
-    <div class="content-area-wrapper">
+    <div class="content-area-wrapper" id="about-university">
         <div class="content-area">
             <div class="container">
                 <div class="row">
@@ -151,7 +197,7 @@
         </div>
     </div>
     <!-- FEATURED DEGREES -->
-    <div class="degrees-wrapper">
+    <div class="degrees-wrapper" id="featured-degrees">
         <div class="degrees">
             <div class="container">
                 <div class="row">
@@ -187,7 +233,7 @@
             </div>
         </div>
     </div>
-    <div class="tabs-content-wrapper">
+    <div class="tabs-content-wrapper" id="why-choose">
         <div class="tab-contents">
             <div class="container">
                 <div class="row">

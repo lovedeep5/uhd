@@ -59,14 +59,18 @@
 	display: inline-block;
 }
 .banner-form-input:after {
-    content:"\f0d7";
-    font-family:'Font Awesome 5 Free';
+	display: inline-block;
+    margin-left: .255em;
+    vertical-align: .255em;
+    content: "";
+    border-top: .3em solid;
+    border-right: .3em solid transparent;
+    border-bottom: 0;
+    border-left: .3em solid transparent;
     position: absolute;
-    right: 10px;
-    z-index: 5;
-    color: #9d9d9d;
-    pointer-events: none;
-    line-height: 2.2em;
+    top: 16px;
+    color: #a8a5a5;
+    right: 10px; 
  }
 
 .banner-form-wrapper button{
