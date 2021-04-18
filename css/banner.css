@@ -24,7 +24,7 @@
 }
 
 .banner-content-wrapper .banner-content-inner span {
-    font-size: clamp(1.1em, 2.80vw, 1.9em);
+    font-size: clamp(1.1em, 2.80vw, 1.75em);
     font-family: 'Adobe Garamond Pro Regular';
     color: #fff;
     line-height: 1;
