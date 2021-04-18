@@ -58,6 +58,8 @@
     position: absolute;
     top: 0;
     color: #84a4d0;
+    left: 50%;
+    transform: translateX(-50%);
     }
 
     .tabs-content-wrapper .tab-data-col:not(:last-of-type):after{
