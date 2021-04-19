@@ -4,7 +4,7 @@ $(document).ready(function() {
         e.preventDefault();
         var dataTarget = $(this).attr("data-target");
         $(".tab-content").hide();
-        $("[tab-data='" + dataTarget + "']").css('display', 'flex');
+        $("[id='" + dataTarget + "']").css('display', 'flex');
     });
 
 
