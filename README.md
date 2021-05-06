@@ -6,3 +6,4 @@ Featured of this page
 4. JS form validaiton for all the fields, It will show up the alert.
 5. True responsive typography: Hardcoded font size is not defined, however font size is as per the PSD, but whenever user will try to increase to decrease the size, text will automatically adjusted as per screen size.
 6. Buttons in the inner section are functional.
+/// This is test comment from another user
